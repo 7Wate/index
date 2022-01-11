@@ -1,0 +1,300 @@
+/* 字体 */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", "Segoe UI", "Microsoft Yahei", Helvetica, Arial, "Apple Color Emoji", sans-serif;
+    font-size: 16px;
+}
+
+p {
+    line-height: 1.15;
+}
+
+h2 {
+    font-size: 1.85em;
+}
+
+
+/* 顶部 */
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+
+/* Logo */
+
+.logo>img {
+    height: 70px;
+    width: auto;
+    max-width: 100%;
+}
+
+
+/* 导航栏 */
+
+nav {
+    position: fixed;
+    top: 19px;
+    right: 19px;
+    z-index: 99;
+    padding: 19px 0px;
+}
+
+nav>a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 0px 7px;
+}
+
+
+/* 搜索按钮 */
+
+#search span,
+#search span::before,
+#search span::after {
+    transition: all 200ms ease-in-out;
+}
+
+#search {
+    opacity: .5;
+}
+
+#search:hover {
+    opacity: 1;
+}
+
+.active>nav>#search>span {
+    display: none;
+}
+
+#search span::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border: 2px solid;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+#search span::after {
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 17px;
+    margin-top: 10px;
+    margin-left: 24px;
+    border-bottom: 2px solid;
+    transform: rotate(50deg);
+    z-index: 100;
+}
+
+
+/* 菜单按钮 */
+
+#toggle span,
+#toggle span::after,
+#toggle span::before {
+    content: '';
+    position: absolute;
+    width: 27px;
+    height: 2px;
+    transition: all 200ms ease-in-out;
+}
+
+#toggle {
+    opacity: .5;
+}
+
+#toggle:hover {
+    opacity: 1;
+}
+
+#toggle span {
+    margin-top: 16px;
+    margin-left: 3px;
+}
+
+#toggle span::after {
+    top: -9px;
+}
+
+#toggle span::before {
+    top: 9px;
+    width: 17px;
+}
+
+
+/* 菜单按钮动画 */
+
+.active>nav>#toggle>span::after {
+    top: 0px!important;
+    transform: rotate(45deg);
+}
+
+.active>nav>#toggle>span::before {
+    top: 0px!important;
+    transform: rotate(-45deg);
+    width: 27px!important;
+}
+
+
+/* 主体 */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 90vh;
+}
+
+.about>main>.container {
+    display: flex;
+}
+
+.container {
+    display: none;
+    margin-top: 70px;
+    width: 1300px;
+    height: 70%;
+    z-index: 0;
+}
+
+article {
+    padding: 12px 26px;
+}
+
+article>div{
+    margin-left: 17px;
+}
+
+@media screen and (max-width:1367px) {
+    .container {
+        flex-wrap: wrap;
+        width: 90%;
+        height: 70%;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1367px) {
+    .left {
+        flex: 0 0 30%;
+        max-width: 310px;
+    }
+    .right {
+        flex: 0 0 70%;
+        max-width: 990px;
+    }
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-title>img {
+    width: auto;
+    height: 210px;
+    border-radius: 50% 50%;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.links>a {
+    width: 28px;
+    height: 28px;
+    margin: 12px 5px;
+}
+
+
+/* 菜单栏 */
+
+menu {
+    position: fixed;
+    top: 0px;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    margin: 0 0;
+    padding: 100px 50px;
+    box-sizing: border-box;
+    transition: all 200ms ease-in-out;
+    z-index: 10;
+}
+
+.active>menu {
+    right: 0px;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0px 50px;
+}
+
+li {
+    display: block;
+    padding: 5px 0px;
+    margin-bottom: 21px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: .7;
+}
+
+
+/* 页脚 */
+
+footer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 64px;
+    padding: 26px 0px;
+    z-index: 9;
+}
+
+.about>footer {
+    display: none;
+}
+
+footer p {
+    line-height: 1.175;
+    margin: 3px 0px;
+}

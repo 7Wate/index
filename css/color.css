@@ -1,0 +1,53 @@
+/* 搜索按钮 */
+
+nav>a#search>span::before,
+nav>a#search>span::after {
+    border-color: #fbeae9;
+}
+
+
+/* 菜单按钮 */
+
+nav>a#toggle>span,
+nav>a#toggle>span::before,
+nav>a#toggle>span::after {
+    background-color: #fbeae9;
+}
+
+
+/* 菜单按钮激活 */
+
+.active>nav>a#toggle>span::before,
+.active>nav>a#toggle>span::after {
+    background-color: #fbeae9!important;
+}
+
+.active>nav>a#toggle>span {
+    background-color: #333;
+}
+
+
+/* 菜单栏 */
+
+menu {
+    background-color: #333;
+}
+
+
+/* 菜单栏链接 */
+
+menu>ul>li>a {
+    color: #fbeae9;
+}
+
+
+/* 脚注链接 */
+
+footer>p,
+footer>p>a {
+    color: #ffffffa8;
+}
+
+article>p>a {
+    color: #834fffdd;
+}
