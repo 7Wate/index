@@ -10,7 +10,7 @@ background {
         left: -241px;
         width: 200%;
         background-size: auto 100%;
-        background-position: 45%;
+        background-position: 10%;
     }
 }
 
@@ -18,7 +18,7 @@ background {
     background {
         left: -100px;
         width: 120%;
-        background-size: 90% auto;
+        background-size: 85% auto;
         background-position: 40%;
     }
 }
