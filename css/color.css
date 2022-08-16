@@ -2,7 +2,7 @@
 
 nav>a#search>span::before,
 nav>a#search>span::after {
-    border-color: #fbeae9;
+    border-color: #3e3e3e;
 }
 
 
@@ -11,7 +11,7 @@ nav>a#search>span::after {
 nav>a#toggle>span,
 nav>a#toggle>span::before,
 nav>a#toggle>span::after {
-    background-color: #fbeae9;
+    background-color: #3e3e3e;
 }
 
 
@@ -45,7 +45,7 @@ menu>ul>li>a {
 
 footer>p,
 footer>p>a {
-    color: #ffffffa8;
+    color: #ffffffc1;
 }
 
 article>p>a {
